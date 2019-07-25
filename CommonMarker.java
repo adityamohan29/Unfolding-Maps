@@ -35,6 +35,8 @@ public abstract class CommonMarker extends SimplePointMarker {
 	}
 	//
 	public static float tc1;
+	
+	// THE SELF MADE EXTENSION TO TYPE CAST THE VARIABLE tc
 	public static void gettc(double tc)
 	{
 		tc1=(float)tc;
@@ -50,9 +52,8 @@ public abstract class CommonMarker extends SimplePointMarker {
 			drawMarker(pg, x, y);
 			if (selected) {
 				showTitle(pg, x, y);
-				//float f=Float.parseFloat(getId()); 
+				// SELF MADE EXTENSION TO DISPLAY THE THREAT CIRCLE WHEN THE MOUSE IS CLICKED
 				pg.ellipse(x,y,tc1/10,tc1/10);
-				//System.out.println(em.tc);
 			}
 			
 		}
