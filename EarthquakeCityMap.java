@@ -279,6 +279,7 @@ public class EarthquakeCityMap extends PApplet {
 					{	Object x1=(quakes.get(i)).getProperty("magnitude".toString());
 						Object x2=(quakes.get(i+1)).getProperty("magnitude".toString());
 						Object x3=(quakes.get(i-1)).getProperty("magnitude".toString());
+					 // SELF MADE EXTENSION : TO DISPLAY EARTHQUAKES WITH SIMILAR MAGNITUDE.
 						if(x1.equals(x2) || x1.equals(x3))
 						{
 							if(x1.equals(x2))
